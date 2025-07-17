@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+    <HTML lang="en-us">
+        <head>
+            <meta charset="utf-8">
+            <title>My HTML Notes!</title>
+        </head>
+        <body>
+            <h1>My HTML Notes :</h1>
+            Note to reader: the ampersand symbol followed by lt or gt and a semicolon creates the angle brackets visible on the webpage that do not trigger element tags. (i.e &lt; &gt;) using the actual symbols in a text editor software will instead trigger an element tag and it will not be visible in a browser.
+            <ol type="1">
+                <li>
+                    The web consists of HTML documents and other resources like images and videos interconnected through hyperlinks.
+                </li>
+                <li>
+                    Some terms:
+                    <ul>
+                        <li>
+                            Syntax - The basic rules of a language.
+                        </li>
+                        <li>
+                            Formalism - Computers are literal.
+                        </li>
+                        <li>
+                            Nesting - Bits of code inside other bits of code in an orderly manner.
+                        </li>
+                        <li>
+                            https://developer.mozilla.org/
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Text is letters, numbers, symbols and spaces.
+                </li>
+                <li> 
+                    Example of opening and closing tag respectively. 
+                    &lt;strong&gt; &lt;/strong&gt;
+                </li>
+                <li>
+                    To break a line type &lt;br&gt;, The br element is a void element which has no contents and no closing tag<br>
+                <li>
+                    To make paragraphs type &lt;p&gt;&lt;/p&gt;
+                </li>
+                <li>
+                    Back to nesting... elements cannot overlap<br>
+                <ol type="a">
+                    <li>
+                        Incorrect: &lt;em&gt;&lt;strong&gt;Hello&lt;em&gt;&lt;strong&gt;
+                    </li>
+                    <li>
+                        Correct: &lt;em&gt;&lt;strong&gt;Hello&lt;strong&gt;&lt;em&gt;
+                    </li>
+                </ol>
+                <li>
+                    Headings for sections can be created using &lt;h1&gt;&lt;/h1&gt; with the 1 being replaced all the way down to 6 with decreasing size.<br>
+                    See "My HTML Notes" for example of h1 tag
+                </li>
+                <li>
+                    Block Elements : i.e.: p and div elements create a block around the content within.<br>
+                    Inline Element : i.e.: Tags like em or strong do not and just alter text as it flows normally.
+                </li>
+                <li>
+                    Always nest li tags inside of ol (ordered list) or ul (unordered list) tags.
+                </li>
+                <li>
+                    To change ordered list bullet &lt;ol type="x"&gt;<br>
+                    replace "x" with 1, A, a, I or i for their respective bullet styles.
+                </li>
+                <li>
+                    <strong>URL:</strong> Uniform Resource Locator
+                    <ol type="i">
+                        <li>
+                            Uniform = Standardized
+                        </li>
+                        <li>
+                            Resource = A file or other data object
+                        </li>
+                        <li>
+                            Locator = Address for finding something
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Hyperlinks can be created by using the tag &lt;a href="Qualified URL"&gt;"Hyperlink clickable text"&lt;/a&gt;<br>
+                    you can also put "(spacebar)target=_blank" after the quoted Qualified URL to make the linked resource open in a new tab.
+                </li>
+                <li>
+                    Images can be inserted by using the tag &lt;img src="Qualified Image URL" alt="Description of Image (i.e: dog photo)"&gt; there is no closing tag.<br>
+                    If the image you want to use is stored locally in the same directory as the HTML file you can use a relative URL like "Dog.jpg" rather than a qualified URL which is beneficial if you are uploading or sending the HTML file with the image file.
+                </li>
+                <li>
+                    Relative links can be used for anchor hypertext references too so as long as the connected linked resource is in the same directory as the HTML document.
+                </li>
+                <li>
+                    For placeholder images use the qualified URLs from placebear or placekitten (i.e: https://placebear.com/200/300 you can change the 200 and 300 for any width or height respectively)
+                </li>
+                <li>
+                    When you've finished writing your HTML use <a href="https://validator.w3.org" target="_blank">https://validator.w3.org</a> to ensure that your HTML is written correctly.
+                </li>
+            </ol>
+        </body>
+    </HTML>

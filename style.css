@@ -1,0 +1,3 @@
+.bigbox {width:156px; height:156px; display:flex; flex-wrap:wrap}
+.smaller { width:50px; height:50px; border:1px solid green; list-style-type:none;font:100 24px "Playwrite VN Guides"
+}

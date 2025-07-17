@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html lang="en-us">
+        <head>
+            <style>
+                span {color:blue;}
+            </style>
+            <title>
+                CSS Notes!
+            </title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            CSS (Cascading Style Sheets) : The language that describes the visual appearance of webpages including properties such as layout, color and font<br>
+            <p>
+                You can style pages in three ways:
+                <ol type="i">
+                    <li>
+                        add the style attribute to individual elements on only the opening tag (i.e.: &lt;p style="color: green"&gt; *TEXT HERE* &lt;/p&gt)<br>
+                        <span style="color:green">See? GREEN TEXT!</span>
+                    </li>
+                    <li>
+                        Add the &lt;style&gt opening and closing tags in the head of the HTML code followed by the element type curly brackets and the style attributes. Example below:<br>
+                        <div>
+                            &lt;head&gt;<br>
+                            <span style="margin-left:30px;">
+                                &lt;style&gt;
+                            </span><br>
+                            <span style="margin-left:60px">
+                                p {color: green}
+                            </span><br>
+                            <span style="margin-left:30px">
+                                &lt;/style&gt;
+                            </span><br>
+                            ... Check HTML for why this text is blue!
+                        </div>
+                    </li>
+                    <li>
+                        Create a new text file with the file extension ".css"<br>
+                        Use the html element &lt;link rel="stylesheet" href="URL to CSS file"&gt;
+                    </li>
+                </ol>
+            Classes and ID's:
+            </p>
+            To add multiple styles to an element put a semicolon between attribute values (i.e.: p { color:blue; text-align:center;} )<br>
+            <p>
+                To affect multiple elements of the same type but not all of that specific element use the html attribute class on the opening tag of an element and give it a name (i.e.: &lt;p class="primary"&gt;) now any style change applied to "primary" will only affect primary class items not all p items.<br>
+                to change the style of a Class put a . before the selector so instead of p { color:green;} for the primary class .primary { color:green; } only the elements labeled with the primary class attribute will be affected.<br>
+            </p>
+            <p> 
+                ID is used when you want to style a SINGULAR UNIQUE item on the page as opposed to a class which affects multiple elements.<br>
+                To set an ID use the html attribute ID on the opening tag of an element and give it a name (i.e.: &lt;div ID="unique"&gt;)<br>
+                to change the style of an ID put a # before the selector so instead of div { border: 1px solid blue} which would affect all div elements instead type #unique { border: 1px solid blue;} only that singular item on the page will be affected.<br>
+                DO NOT USE THE SAME ID MORE THAN ONCE!
+            </p>
+                You can combine selectors by typing the parent selector followed by the child selector before the declaration block (i.e.: li em { color:red;}) This will make all em elements in a list red.
+            <p>
+                1 px = 1/96"    1pt 1/72"
+                37.8px = 1 cm
+                1em = relative to font size of an element
+            </p>
+            <div style="border:1px solid black; padding:.5em; width:500px;">
+                Box example:
+                <p style="border: 1px solid green; width: 150px; height:90px; padding: 0.5em; margin:1em;">
+                    border: 1px solid green<br>
+                    margin: 1em<br>
+                    padding: 0.5em<br>
+                    width: 150px<br>
+                    height: 90px
+                </p>
+                &lt;p style="border: 1px solid green; width: 150px; height:90px; padding: 0.5em; margin:1em"&gt;
+            </div><br>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">More CSS elements!</a>
+        <div style="width:300px; float:right">
+            How to write fonts<br>
+            p {font-size:48px;<br>
+            font-weight:bold;<br>
+            font-style:italic;<br>
+            text-decoration:underline;}
+            <p>
+                or use the shorthand style attribute "font" followed by values in a specific order style variant weight size family
+            </p>
+        </div>
+        </body>
+    </html>
